@@ -1,0 +1,25 @@
+{
+    "name":"KJ Jisho Mod",
+    "short_name":"kjjisho",
+    "description":"Mods to Jisho for KJ Study",
+    "version":"1.0.0",
+    "homepage_url":"https://github.com/risonakamo/kj-jisho-mod",
+    "manifest_version":3,
+    "author":"risonakamo",
+
+    "permissions": [
+
+    ],
+
+    "host_permissions":[
+
+    ],
+
+    "content_scripts": [{
+        "matches":[
+            "https://test/*"
+        ],
+        "js":["build-cs/test.iife.js"],
+        "run_at":"document_end"
+    }]
+}
