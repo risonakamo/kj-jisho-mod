@@ -2,7 +2,8 @@
   "name": "kj-jisho-mod",
   "version": "1.0.0",
   "scripts": {
-    "b": "vite build -w false"
+    "b": "vite build -w false",
+    "w": "vite build -w true"
   },
   "type": "module",
   "dependencies": {

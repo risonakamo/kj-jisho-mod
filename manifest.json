@@ -17,7 +17,8 @@
 
     "content_scripts": [{
         "matches":[
-            "https://jisho.org/search/*"
+            "https://jisho.org/search/*",
+            "https://jisho.org/word/*"
         ],
         "js":["build-cs/jishomod.iife.js"],
         "run_at":"document_end"
