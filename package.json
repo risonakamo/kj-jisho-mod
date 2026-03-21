@@ -2,15 +2,14 @@
   "name": "kj-jisho-mod",
   "version": "1.0.0",
   "scripts": {
-    "b-ui": "vite --config vite-ui.config.ts build -w false",
-    "w-ui": "vite --config vite-ui.config.ts build -w true",
-    "b-lib": "vite --config vite-lib.config.ts build -w false",
-    "w-lib": "vite --config vite-lib.config.ts build -w true",
-    "b":"pnpm b-ui && pnpm b-lib",
-    "check-ui": "svelte-check --threshold error"
+    "b": "vite build -w false"
   },
   "type": "module",
   "dependencies": {
-
+    "@types/chrome": "^0.1.38",
+    "rollup": "^4.59.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.1",
+    "vite-plugin-checker": "^0.12.0"
   }
 }

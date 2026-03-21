@@ -17,9 +17,9 @@
 
     "content_scripts": [{
         "matches":[
-            "https://test/*"
+            "https://jisho.org/search/*"
         ],
-        "js":["build-cs/test.iife.js"],
+        "js":["build-cs/jishomod.iife.js"],
         "run_at":"document_end"
     }]
 }

@@ -1,6 +1,5 @@
 import {defineConfig} from "vite";
 import checker from "vite-plugin-checker";
-import tsconfigPaths from "vite-tsconfig-paths";
 import {LogLevel,RollupLog,LogHandler} from "rollup";
 
 declare const __dirname:string;
@@ -12,10 +11,10 @@ export default defineConfig({
         checker({
             typescript:true
         }),
-        tsconfigPaths()
     ],
 
     resolve:{
+        tsconfigPaths:true,
         alias:{
             "@":`${__dirname}/web`,
         }
@@ -23,10 +22,10 @@ export default defineConfig({
 
     build:{
         lib:{
-            name:"schelper",
-            fileName:"schelper",
+            name:"jishomod",
+            fileName:"jishomod",
             entry:{
-                e1:`${__dirname}/web/content-scripts/schelper-cs-main.ts`,
+                e1:`${__dirname}/web/cs/kj-jisho-mod-main.ts`,
             },
             formats:["iife"]
         },

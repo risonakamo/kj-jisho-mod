@@ -9,7 +9,7 @@
         // -- lib settings
         "lib":["dom","ESNext"],
         "target":"ESNext",
-        "types": ["vite/client","chrome","svelte"],
+        "types": ["vite/client","chrome"],
 
         // -- module/import settings
         "esModuleInterop":false,
