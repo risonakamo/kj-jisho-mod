@@ -44,7 +44,7 @@ export function wordPageLinkShortcuts():void
         }
 
         kanjiBox.insertAdjacentHTML("beforeend",`
-            <a href="https://jisho.org/search/*${kanji}* #common" class="light-details_link">
+            <a href="https://jisho.org/search/*${kanji}*%20%23common" class="light-details_link">
                 Word Search
             </a>
         `);
